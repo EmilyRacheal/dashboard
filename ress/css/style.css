@@ -48,5 +48,35 @@ body{
     width: 15%;
     margin: 30px;
     border-radius: 10px;
-    /* height: 20vh; */
+}
+
+.dash-work{
+    margin: 30px;
+}
+
+.dash-work .work{
+    background: rgb(248, 140, 98);
+    border-radius: 10px;
+    width: 180px;
+    padding-top: 30px;
+}
+
+.dash-work .work .d-work{
+    color: #fff;
+    font-family:firaBlack; 
+    background: #4f3cac;
+    border-radius: 10px;
+    padding: 10px;
+     
+
+
+           
+}
+.dash-work .work h2{
+    line-height: 2px;
+}
+
+.dashboard-conatainer{
+    display: flex;
+    
 }
