@@ -1,14 +1,52 @@
+@font-face {
+    font-family:firaBlack ;
+    src: url(../fonts/Fira_Sans/FiraSans-Light.ttf);
+  }
+
 body{
     margin: 0px;
     padding: 0px;
+}
+#dashboard{
+    background: rgb(17, 17, 58);
 }
 
 .dash-report .d-report img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    border: 3px solid white;
+}
+.dash-report .d-report h5{
+    line-height: 1px;
+    font-weight: lighter;
 }
 
 .dash-report .d-report{
-    padding: 10px;
+    padding: 30px;
+    color: #fff;
+    font-family:firaBlack;
+    background: #4f3cac;
+    border-radius: 10px;
+    height: 30vh;
+}
+
+.dash-report .d-day{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    color: #4f3cac;
+}
+
+.dash-report .d-day span{
+    color: #fff;
+    font-family:firaBlack;
+}
+.dash-report{
+    background: rgb(38, 28, 88);
+    width: 15%;
+    margin: 30px;
+    border-radius: 10px;
+    /* height: 20vh; */
 }
