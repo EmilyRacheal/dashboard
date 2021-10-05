@@ -11,6 +11,7 @@
   :root {
     --bg-color: #040427;
     --d-report-color: #4f3cac;
+    --dash-report-color: #261c58;
     --font-color: #222;
     --title-color: #0067e6;
     --title-background: #fff;
@@ -60,7 +61,7 @@ body{
     padding-right: 30px;
     padding-bottom: 8px;
     border-radius: 10px;
-    color: #4f3cac;
+    color: var(--d-report-color);
 }
 
 .dash-report .d-day span{
@@ -68,7 +69,7 @@ body{
     font-family:firaBlack;
 }
 .dash-report{
-    background: rgb(38, 28, 88);
+    background: var(--dash-report-color);
     width: 25%;
     margin: 30px;
     border-radius: 10px;
@@ -92,7 +93,7 @@ body{
 .dash-work .work .d-work{
     color: #fff;
     font-family:firaBlack; 
-    background: #4f3cac;
+    background: var(--d-report-color);
     border-radius: 10px;
     padding: 25px;        
 }
