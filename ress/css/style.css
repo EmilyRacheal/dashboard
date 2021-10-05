@@ -8,12 +8,31 @@
     src: url(../fonts/Fira_Sans/FiraSans-Thin.ttf);
   }
 
+  :root {
+    --bg-color: #040427;
+    --d-report-color: #4f3cac;
+    --font-color: #222;
+    --title-color: #0067e6;
+    --title-background: #fff;
+    --main-border: 1px solid rgba(255, 255, 255, 0.4);
+    --main-bg: rgba(255, 255, 255, 0.4);
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: #111;
+    --font-color: #efefef;
+    --title-color: #fec150;
+    --title-background: #222;
+    --main-border: 1px solid rgba(255, 255, 255, 0.2);
+    --main-bg: rgba(25, 25, 25, 0.4);
+  }
+
 body{
     margin: 0px;
     padding: 0px;
 }
 #dashboard{
-    background: rgb(4, 4, 39);
+    background: var(--bg-color);
 }
 
 .dash-report .d-report img{
@@ -31,7 +50,7 @@ body{
     padding: 30px;
     color: #fff;
     font-family:firaBlack;
-    background: #4f3cac;
+    background: var(--d-report-color);
     border-radius: 10px;
     height: 30vh;
 }
