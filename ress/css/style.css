@@ -9,18 +9,19 @@
   }
 
   :root {
-    --bg-color: #040427;
+    --bg-color: #fff;
     --d-report-color: #4f3cac;
     --dash-report-color: #261c58;
-    --font-color: #222;
-    --title-color: #0067e6;
-    --title-background: #fff;
-    --main-border: 1px solid rgba(255, 255, 255, 0.4);
-    --main-bg: rgba(255, 255, 255, 0.4);
+    --dashworks-first-child-color: #f88c62;
+    --dashworks-second-child-color: #85f862;
+    --dashwor-first-child-color: #4eddf6;
+    --dashwor-second-child-color: #670c8b;
+    --dashw-first-child-color: #f144bd;
+    --dashw-second-child-color: #f1ee1f;
   }
   
   [data-theme="dark"] {
-    --bg-color: #111;
+    --bg-color: #040427;
     --font-color: #efefef;
     --title-color: #fec150;
     --title-background: #222;
@@ -129,22 +130,22 @@ body{
     margin-top: 25px;
 }
 .dash-works > div:first-child{
-    background: rgb(248, 140, 98);
+    background: var(--dashworks-first-child-color);
 }
 .dash-works > div:nth-child(2){
-    background: rgb(133, 248, 98);
+    background: var(--dashworks-second-child-color);
 }
 .dash-wor > div:first-child{
-    background: rgb(78, 221, 246);
+    background: var(--dashwor-first-child-color);
 }
 .dash-wor > div:nth-child(2){
-    background: rgb(103, 12, 139);
+    background: var(--dashwor-second-child-color);
 }
 .dash-w > div:first-child{
-    background: rgb(241, 68, 189);
+    background: var(--dashw-first-child-color);
 }
 .dash-w > div:nth-child(2){
-    background: rgb(241, 238, 31);
+    background: var(--dashw-second-child-color);
 }
 
 
