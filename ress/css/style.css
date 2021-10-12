@@ -38,6 +38,9 @@ body{
 
 .moon{
     color: var(--moon-color);
+    margin-top: 30px;
+    margin-left: 30px;
+
 }
 
 #dashboard{
