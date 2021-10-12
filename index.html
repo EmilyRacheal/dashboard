@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,16 +10,8 @@
 </head>
 <body>
     <section id="dashboard">
-
-        <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-              <input type="checkbox" id="checkbox" />
-              <div class="slider">
-                <i class="fas fa-moon fa-3x"></i>
-            </label>
-          </div>
-
         <div class="dashboard-conatainer">
+            <i class="fas fa-moon fa-2x moon"  id="theme-switcher" ></i>
             <div class="dash-report">
                 <div class="d-report">
                     <div class="d-flex">
@@ -114,6 +106,23 @@
             </div>
         </div>
     </section>
+
     <script src="ress/js/script.js"></script>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event) {
+
+          document.documentElement.setAttribute("data-theme", "light");
+          var themeSwitcher = document.getElementById("theme-switcher");
+
+          themeSwitcher.onclick = function() {
+
+            var currentTheme = document.documentElement.getAttribute("data-theme");
+            var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+            document.documentElement.setAttribute("data-theme", switchToTheme);
+
+          }
+        });
+      </script>
 </body>
 </html>
