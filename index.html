@@ -10,8 +10,9 @@
 </head>
 <body>
     <section id="dashboard">
+        <i class="fas fa-moon fa-2x moon"  id="theme-switcher" ></i>
         <div class="dashboard-conatainer">
-            <i class="fas fa-moon fa-2x moon"  id="theme-switcher" ></i>
+           
             <div class="dash-report">
                 <div class="d-report">
                     <div class="d-flex">
@@ -112,14 +113,25 @@
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function(event) {
 
-          document.documentElement.setAttribute("data-theme", "light");
+            const currentTheme = localStorage.getItem("theme");
+
+          document.documentElement.setAttribute("data-theme", currentTheme);
           var themeSwitcher = document.getElementById("theme-switcher");
 
           themeSwitcher.onclick = function() {
 
-            var currentTheme = document.documentElement.getAttribute("data-theme");
-            var switchToTheme = currentTheme === "dark" ? "light" : "dark"
-            document.documentElement.setAttribute("data-theme", switchToTheme);
+            var currentTheme = localStorage.getItem("theme");
+            var switchToTheme = "";
+            if(currentTheme == "dark"){
+                switchToTheme = "light";
+                localStorage.setItem("theme", "light");
+                document.documentElement.setAttribute("data-theme", switchToTheme);
+            }else{
+                switchToTheme = "dark";
+                localStorage.setItem("theme", "dark");
+                document.documentElement.setAttribute("data-theme", switchToTheme);
+            }
+            
 
           }
         });
